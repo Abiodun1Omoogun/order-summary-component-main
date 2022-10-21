@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+/* Mobile view */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Red Hot Display', sans-serif;
+    font-size: 1rem; 
+    background-color: hsl(225, 100%, 98%);
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    margin: 5em auto 0;
+    width: 90%;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    padding: 0 1.6em;
+    line-height: 1.5;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.container {
+    text-align: center;
+}
+
+.hero {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.flex {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+span {
+    padding: 0 .9em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plans{
+    font-size: 500;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+}
+
+
+.blue {
+    font-weight: 700;
+    margin-top: .9em;
+    text-align: center;
+}
+
+.blue a {
+    color: hsl(245, 75%, 52%);
+}
+
+.blue a:hover{
+    opacity: .7;
+    text-decoration: none;
+}
+
+.btn{
+    width: 83%;
+    padding: .8em .1em;
+    margin: .5em;
+    border: .25em;
+    cursor: pointer;
+    border-radius: .8em;
+    box-shadow: 0 0 0 9px rgba(0, 0, 0, 0.008);
+    transition: 2ms ease-in-out;
+}
+.btn1{
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+}
+.btn1:hover{
+   opacity: .75;
+}
+
+.btn2{
+    background: transparent;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 2em;
+}
+.btn2:hover{
+ opacity: 5;
+ font-weight: 900;
+ color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 9.4em;     
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* Desktop view */
+@media (min-width: 1024px) {
+    body {
+        background-image: url('./images/pattern-background-desktop.svg');
+    }
+    
+    .hero{
+        width: 100%;
+    }
+
+    .main{
+        width: 60%;
+        max-width: 360px;
+    }
+}
+
